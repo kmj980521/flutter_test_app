@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/constants.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-class HeaderWithSearchBox extends StatelessWidget {
-  const HeaderWithSearchBox({
+class Header extends StatelessWidget {
+  const Header({
     Key key,
     @required this.size,
   }) : super(key: key);
@@ -12,85 +13,70 @@ class HeaderWithSearchBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: kDefaultPadding * 2.5),
+      margin: EdgeInsets.only(bottom: 20),
       height: size.height * 0.2,
+      width: size.width,
       child: Stack(
         children: [
+
           Container(
             padding: EdgeInsets.only(
                 left:kDefaultPadding,
                 right:kDefaultPadding,
-                bottom: 36+ kDefaultPadding
+
             ),
-            height: size.height * 0.2 -27,
+            height: size.height * 0.3,
             decoration: BoxDecoration(
                 color:kPrimaryColor,
+               image:DecorationImage(
+                    image: AssetImage('assets/images/global_shadow.png'),
+                  fit:BoxFit.cover,
+                ),
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(36),
                     bottomRight: Radius.circular(36)
                 )
             ),
-            child: Row(
-              children: [
-                Text('Hi Global Campus!', style: Theme.of(context).textTheme.headline5.copyWith(
-                  color:Colors.white,
-                  fontWeight: FontWeight.bold,
-                ),),
-                Spacer(),
-
-                Container(
-
-                  width: 80,
-                    height: 80,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      image:DecorationImage(
-                          image: AssetImage('assets/images/global_shadow.png')
-                      ),
-                    ),
-                )
-                //Image.asset('assets/images/logo.png'),
-              ],
-            ),
-          ),
-          Positioned(
-            bottom: 0,
-            left: 0,
-            right:0,
-
-            child: Container(
-              alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-              padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-              height: 54,
-              decoration: BoxDecoration(
-                  color:Colors.white,
-                  borderRadius: BorderRadius.circular(20),
-                  boxShadow: [
-                    BoxShadow(
-                      offset: Offset(0,10),
-                      blurRadius: 50,
-                      color: kPrimaryColor.withOpacity(0.23),
-                    )]
-              ),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 7),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Expanded(
-                    child: TextField(
-                      onChanged: (value){},
-                      decoration: InputDecoration(
-                        hintText: "Search",
-                        hintStyle: TextStyle(color:kPrimaryColor.withOpacity(0.5)),
-                        enabledBorder: InputBorder.none,
-                        focusedBorder: InputBorder.none,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal:13),
+                    child: Container(
+
+                      width: 60,
+                      height: 60,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        image:DecorationImage(
+                            image: AssetImage('assets/images/hufs_logo.jpg')
+                        ),
                       ),
                     ),
                   ),
-                  Icon(Icons.search),
+                  Text('Hi Global Campus!',
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.roboto(
+                    color:Colors.black,
+
+                    fontWeight: FontWeight.bold,
+                    fontSize: 30,
+              )
+                  //Theme.of(context).textTheme.headline5.copyWith(
+
+                  ,),
+                  Spacer(),
+
+
+                  //Image.asset('assets/images/logo.png'),
                 ],
               ),
             ),
-          )
+          ),
+
         ],
       ),
     );

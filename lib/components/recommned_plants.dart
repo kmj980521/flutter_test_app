@@ -14,8 +14,8 @@ class RecomendsPlants extends StatelessWidget {
       child: Row(
         children: [
           RecomendPlantCard(
-            image: 'assets/images/image_1.png',
-            title: 'Samantha',
+            image: 'assets/images/hufs_logo.jpg',
+            title: '1',
             country: 'Russia',
             icon: Icon(Icons.flag),
             press : (){
@@ -27,8 +27,8 @@ class RecomendsPlants extends StatelessWidget {
             price: 440,
           ),
           RecomendPlantCard(
-            image: 'assets/images/image_1.png',
-            title: 'Samantha',
+            image: 'assets/images/hufs_logo.jpg',
+            title: '2',
             country: 'Russia',
             icon: Icon(Icons.backspace),
             press : (){
