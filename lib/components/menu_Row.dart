@@ -66,12 +66,21 @@ class menuCard extends StatelessWidget {
         height:size.width * 0.22,
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.only(bottom:10,top: 5),
-              child: menuIcon,
-            ),
+            Container(
+              width:size.width * 0.22,
+              height: size.height*0.10,
+              child: Center(
+                child: Padding(
 
-            Text('$menuName',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+                  padding: const EdgeInsets.only(bottom:5,),
+                  child: menuIcon,
+                ),
+              ),
+            ),
+            Container(
+                width: size.width*0.22,
+                height: size.width * 0.05,
+                child: Center(child: Text('$menuName',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),))),
           ],
         ),
       ),

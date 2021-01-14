@@ -1,3 +1,4 @@
+import 'package:community_material_icon/community_material_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/components/featurred_plants.dart';
 import 'package:flutter_app/components/header_with_search.dart';
@@ -51,7 +52,7 @@ class Body extends StatelessWidget {
             menu2: "편의점, 마트",
             menu3: "노래&PC방",
             menu4: "편의시설",
-            menu1_Icon: Icon(FontAwesomeIcons.school,size: 50,),
+            menu1_Icon: Icon(CommunityMaterialIcons.school,size: 50,), //FontAwesomeIcons.school
             menu2_Icon: Icon(Icons.local_convenience_store,size:50),
             menu3_Icon: Icon(MdiIcons.microphoneVariant,size:50),
             menu4_Icon: Icon(MdiIcons.bank,size:50),

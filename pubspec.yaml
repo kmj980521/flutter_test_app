@@ -34,6 +34,7 @@ dependencies:
   line_awesome_flutter: ^1.0.1
   fluttericon: ^1.0.7
   material_design_icons_flutter: ^4.0.5655
+  community_material_icon: ^5.4.55
 
 dev_dependencies:
   flutter_test:
