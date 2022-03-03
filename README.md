@@ -15,7 +15,7 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-## 아이콘 간격 조절 
+- 아이콘 간격 조절 
 
 ![image](https://user-images.githubusercontent.com/61898890/156566751-ef92333a-9179-4274-8877-c37f33768e78.png)
 
