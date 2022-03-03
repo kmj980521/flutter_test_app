@@ -40,8 +40,8 @@ class RecomendsPlants extends StatelessWidget {
             price: 440,
           ),
           RecomendPlantCard(
-            image: 'assets/images/image_1.png',
-            title: 'Samantha',
+            image: 'assets/images/hufs_logo.jpg',
+            title: '3',
             country: 'Russia',
             icon: Icon(Icons.sentiment_satisfied),
             press : (){
@@ -53,8 +53,8 @@ class RecomendsPlants extends StatelessWidget {
             price: 440,
           ),
           RecomendPlantCard(
-            image: 'assets/images/image_1.png',
-            title: 'Samantha',
+            image: 'assets/images/hufs_logo.jpg',
+            title: '4',
             country: 'Russia',
             icon: Icon(Icons.business),
             press : (){
@@ -66,8 +66,8 @@ class RecomendsPlants extends StatelessWidget {
             price: 440,
           ),
           RecomendPlantCard(
-            image: 'assets/images/image_1.png',
-            title: 'Samantha',
+            image: 'assets/images/hufs_logo.jpg',
+            title: '5',
             country: 'Russia',
             icon: Icon(Icons.child_care),
             press : (){
@@ -80,8 +80,8 @@ class RecomendsPlants extends StatelessWidget {
           ),
 
           RecomendPlantCard(
-            image: 'assets/images/image_2.png',
-            title: 'Samantha',
+            image: 'assets/images/hufs_logo.jpg',
+            title: '6',
             country: 'Russia',
             icon: Icon(Icons.search),
             press : (){
@@ -93,8 +93,8 @@ class RecomendsPlants extends StatelessWidget {
             price: 440,
           ),
           RecomendPlantCard(
-            image: 'assets/images/image_3.png',
-            title: 'Samantha',
+            image: 'assets/images/hufs_logo.jpg',
+            title: '7',
             country: 'Russia',
             icon: Icon(Icons.save),
             press : (){

@@ -38,32 +38,32 @@ class Header extends StatelessWidget {
                 )
             ),
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 7),
+              padding: const EdgeInsets.symmetric(horizontal: 65),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal:13),
-                    child: Container(
-
-                      width: 60,
-                      height: 60,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(30),
-                        image:DecorationImage(
-                            image: AssetImage('assets/images/hufs_logo.jpg')
-                        ),
-                      ),
-                    ),
-                  ),
+                  // Padding(
+                  //   padding: const EdgeInsets.symmetric(horizontal:13),
+                  //   child: Container(
+                  //
+                  //     width: 60,
+                  //     height: 60,
+                  //     decoration: BoxDecoration(
+                  //       borderRadius: BorderRadius.circular(30),
+                  //       image:DecorationImage(
+                  //           image: AssetImage('assets/images/hufs_logo.jpg')
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
                   Text('Hi Global Campus!',
                     textAlign: TextAlign.center,
-                    style: GoogleFonts.roboto(
+                    style: GoogleFonts.dancingScript(
                     color:Colors.black,
 
                     fontWeight: FontWeight.bold,
-                    fontSize: 30,
+                    fontSize: 35,
               )
                   //Theme.of(context).textTheme.headline5.copyWith(
 

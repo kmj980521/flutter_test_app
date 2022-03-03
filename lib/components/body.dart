@@ -60,7 +60,7 @@ class Body extends StatelessWidget {
 
           RecomendsPlants(),
           TitleWithMoreBtn(
-            title:'Featured Plants', press: (){},
+            title:'테스트 2', press: (){},
           ),
           FeaturePlants(),
           SizedBox(

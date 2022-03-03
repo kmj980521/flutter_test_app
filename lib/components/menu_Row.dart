@@ -68,7 +68,7 @@ class menuCard extends StatelessWidget {
           children: [
             Container(
               width:size.width * 0.22,
-              height: size.height*0.10,
+              height: size.height*0.08,
               child: Center(
                 child: Padding(
 
